@@ -21,22 +21,29 @@
     <!-- Slick Slider CSS -->
     <link rel="stylesheet" href="./assets/css/slick/slick.css" />
     <link rel="stylesheet" href="./assets/css/slick/slick-theme.css" />
+    <!-- Animate on Scroll (AOS) CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- Custom -->
     <link rel="stylesheet" href="./assets/css/custom.css" />
   </head>
-  <body>
+  <body class="dark">
     <!-- *** Preloader *** -->
     <div class="preloader">
       <div class="status"></div>
     </div>
     <!-- *** Landing Starts *** -->
     <div class="landing">
-      <img src="./assets/img/init-arc.svg" alt="" class="body-img" />
+      <img src="./assets/img/init-arc.svg" alt="Arc" class="body-img" />
       <!-- ** Header Start ** -->
       <header>
         <nav class="navbar">
           <div class="container">
-            <a class="navbar-brand" href="./index.html">
+            <a
+              class="navbar-brand"
+              data-aos="zoom-in"
+              data-aos-duration="2000"
+              href="./index.html"
+            >
               <img
                 src="./assets/img/logo-white.svg"
                 alt="Logo"
@@ -49,8 +56,21 @@
               />
             </a>
             <div class="ml-auto">
-              <a href="#email" class="btn btn-primary">Get Notified</a>
-              <button class="btn btn-dark" id="theme-switch">
+              <a
+                href="#email"
+                class="btn btn-primary"
+                data-aos="fade-down"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="1000"
+                >Get Notified</a
+              >
+              <button
+                class="btn btn-dark"
+                id="theme-switch"
+                data-aos="fade-down"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="1000"
+              >
                 <i class="fas fa-sun fa-lg"></i>
               </button>
             </div>
@@ -68,7 +88,7 @@
               <div class="col-md-7 hero-content-container">
                 <div class="hero-content">
                   <!-- Hero Header -->
-                  <h1 class="hero-header">
+                  <h1 class="hero-header" data-aos="fade-left">
                     Writing Codes <br />
                     with An
                     <span
@@ -79,7 +99,7 @@
                   </h1>
 
                   <!-- Hero Text -->
-                  <p class="hero-text">
+                  <p class="hero-text" data-aos="fade-right">
                     This app offers simple, bite-sized explainers to help
                     anyone, from beginner to experts, learn how to structure
                     codes to develop working products.
@@ -88,8 +108,10 @@
                   <!-- Subscribe Form -->
                   <div class="hero-form">
                     <form method="POST">
-                      <label for="email">Subcribe for Product Newsletter</label>
-                      <div class="custom-input">
+                      <label for="email" data-aos="fade-right"
+                        >Subcribe for Product Newsletter</label
+                      >
+                      <div class="custom-input" data-aos="fade-up">
                         <input
                           type="email"
                           id="email"
@@ -117,7 +139,12 @@
                           Loading...
                         </button>
                       </div>
-                      <div class="custom-checkbox mt-5">
+                      <div
+                        class="custom-checkbox mt-5"
+                        data-aos="fade-up-right"
+                        data-aos-easing="ease-out-cubic"
+                        data-aos-duration="1000"
+                      >
                         <input
                           type="checkbox"
                           class="checkbox"
@@ -134,7 +161,13 @@
                 </div>
               </div>
               <div class="col-md-5 hero-sliders">
-                <div class="pages-slider" id="page-sliders">
+                <div
+                  class="pages-slider"
+                  id="page-sliders"
+                  data-aos="zoom-in"
+                  data-aos-easing="ease-out-cubic"
+                  data-aos-duration="1000"
+                >
                   <!-- Start Page -->
                   <div class="page text-center">
                     <a href="./assets/img/hero-img.svg">
@@ -199,10 +232,10 @@
           <div class="container">
             <div class="row">
               <div class="col-md-12 text-center">
-                <h2 class="info-heading">
+                <h2 class="info-heading" data-aos="zoom-in-down">
                   Mentorship Made Easy For Every Enthusiast
                 </h2>
-                <p class="info-text">
+                <p class="info-text" data-aos="zoom-in-up">
                   MentAI is an AI that mentors you on how to become and software
                   programmer. With recommends, test and resources, the AI mentor
                   helps you set a curriculum that helps you learn how to write
@@ -215,9 +248,10 @@
 
             <div class="row info-steps">
               <div class="col-12 col-md-6 col-lg-4">
-                <div class="info-step">
+                <div class="info-step" data-aos="fade-right">
                   <div class="info-step-img mt-3">
                     <svg
+                      data-aos="flip-right"
                       width="108"
                       height="108"
                       viewBox="0 0 108 108"
@@ -231,7 +265,7 @@
                       />
                     </svg>
                   </div>
-                  <p class="info-step-text">
+                  <p class="info-step-text" data-aos="flip-left">
                     Coding languages been taught from start to finish.
                     Assessments and coding materials all made avaiable on the
                     app. The mentor woul help users pick what language to start
@@ -241,7 +275,7 @@
                 </div>
               </div>
               <div class="col-12 col-md-6 col-lg-4">
-                <div class="info-step">
+                <div class="info-step" data-aos="flip-down">
                   <div class="info-step-img mt-3">
                     <svg
                       width="108"
@@ -268,7 +302,7 @@
               <div
                 class="col-12 col-md-6 mx-auto col-lg-4 mt-md-3 mt-lg-0 mt-0"
               >
-                <div class="info-step">
+                <div class="info-step" data-aos="fade-left">
                   <div class="info-step-img mt-3">
                     <svg
                       width="108"
@@ -317,6 +351,9 @@
                     src="./assets/img/iphone.png"
                     alt="Guide"
                     class="guide-img"
+                    data-aos="zoom-in-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1000"
                   />
                 </a>
               </div>
@@ -324,11 +361,16 @@
 
             <div class="row guides">
               <div class="col-md-6 text-center guide-image-container">
-                <img
-                  src="./assets/img/iphone.png"
-                  alt="Guide"
-                  class="guide-img"
-                />
+                <a href="">
+                  <img
+                    src="./assets/img/iphone.png"
+                    alt="Guide"
+                    class="guide-img"
+                    data-aos="zoom-in-right"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1000"
+                  />
+                </a>
               </div>
 
               <div class="col-md-6 guide">
@@ -376,11 +418,16 @@
           <div class="container">
             <div class="row">
               <div class="col-md-6 text-center">
-                <img
-                  src="./assets/img/iphone.png"
-                  alt="Guide"
-                  class="guide-img"
-                />
+                <a href="">
+                  <img
+                    src="./assets/img/iphone.png"
+                    alt="Guide"
+                    class="guide-img"
+                    data-aos="zoom-in-up"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1000"
+                  />
+                </a>
               </div>
               <div class="col-md-6">
                 <h3 class="guide-heading">
@@ -388,11 +435,16 @@
                   through your path and where to beginner
                 </h3>
                 <div class="text-center">
-                  <img
-                    src="./assets/img/iphone.png"
-                    alt="Guide"
-                    class="guide-img"
-                  />
+                  <a href="">
+                    <img
+                      src="./assets/img/iphone.png"
+                      alt="Guide"
+                      class="guide-img"
+                      data-aos="zoom-in-down"
+                      data-aos-easing="ease-out-cubic"
+                      data-aos-duration="1000"
+                    />
+                  </a>
                 </div>
               </div>
             </div>
@@ -471,7 +523,12 @@
             <!-- Count Down -->
             <div class="row">
               <div class="col-md-10 mx-auto">
-                <div class="launch-countdown row no-gutters">
+                <div
+                  class="launch-countdown row no-gutters"
+                  data-aos="flip-down"
+                  data-aos-easing="ease-out-cubic"
+                  data-aos-duration="1000"
+                >
                   <div class="col-md-3 col-3 countdown">
                     <span class="time days">0</span>
                     <span class="delimeter"></span>
@@ -539,8 +596,8 @@
     <script src="./assets/js/slick/slick.min.js"></script>
     <!-- SweetAlert -->
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <!-- GSAP -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js"></script>
+    <!-- Animate on Scroll (AOS) JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- custom -->
     <script src="./assets/js/custom.js"></script>
   </body>

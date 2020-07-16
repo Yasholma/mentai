@@ -196,30 +196,9 @@ $(function () {
   }, 1000)
 })
 
-// GSAP Testing
+// Animate On Scroll
 $(function () {
-  gsap.from('.navbar-brand img', {
-    duration: 2,
-    x: -100,
-    opacity: 0,
-    ease: 'bounce',
-  })
-  gsap.from('#theme-switch', { duration: 2, rotateX: 360 })
-
-  // Timeline
-  const tl = gsap.timeline()
-  tl.to('.info-step', { duration: 2, ease: 'bounce' })
-
-  // Stagger
-  gsap.from('.hero-content', {
-    duration: 2,
-    scale: 0.5,
-    opacity: 0,
-    delay: 0.5,
-    stagger: 0.5,
-    ease: 'elastic',
-    force3D: true,
-  })
+  AOS.init()
 })
 
 // Preloader Settings

@@ -109,10 +109,8 @@ h6 {
 .custom-input .form-control {
   position: absolute;
   padding: 1.7rem;
+  padding-right: 1.5rem;
   font-size: 0.8rem;
-}
-
-.custom-input .form-control.white-mode {
   box-shadow: -2px 0 14px rgba(186, 207, 238, 0.38);
   border: 0;
 }
