@@ -18,6 +18,10 @@
     <link rel="stylesheet" href="./assets/css/custom.css" />
   </head>
   <body>
+    <!-- *** Preloader *** -->
+    <div class="preloader">
+      <div class="status"></div>
+    </div>
     <!-- *** Landing Starts *** -->
     <div class="landing">
       <img src="./assets/img/init-arc.svg" alt="" class="body-img" />
@@ -124,7 +128,7 @@
               </div>
               <div class="col-md-5 hero-sliders">
                 <div class="pages-slider" id="page-sliders">
-                  <!-- Start Page Page -->
+                  <!-- Start Page -->
                   <div class="page text-center">
                     <a href="./assets/img/hero-img.svg">
                       <img
@@ -300,12 +304,14 @@
                   <a href="#email" class="btn btn-primary">Get Notified</a>
                 </div>
               </div>
-              <div class="col-md-6 guide-image-container">
-                <img
-                  src="./assets/img/iphone.png"
-                  alt="Guide"
-                  class="guide-img"
-                />
+              <div class="col-md-6 guide-image-container" id="signup">
+                <a href="./assets/img/iphone.png" title="SignUp Page">
+                  <img
+                    src="./assets/img/iphone.png"
+                    alt="Guide"
+                    class="guide-img"
+                  />
+                </a>
               </div>
             </div>
 

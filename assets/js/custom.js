@@ -130,16 +130,17 @@ $('.pages-slider').slick({
 })
 
 $(function () {
-  magnifyImages('page-sliders')
+  magnifyImages('page-sliders', true)
+  magnifyImages('signup')
 })
 
 // Function that Adds images to magnify popup
-function magnifyImages(id) {
+function magnifyImages(id, gallery = false) {
   $(`#${id}`).magnificPopup({
     delegate: 'a',
     type: 'image',
     gallery: {
-      enabled: true,
+      enabled: gallery,
     },
   })
 }
@@ -208,4 +209,21 @@ $(function () {
   // Timeline
   const tl = gsap.timeline()
   tl.to('.info-step', { duration: 2, ease: 'bounce' })
+
+  // Stagger
+  gsap.from('.hero-content', {
+    duration: 2,
+    scale: 0.5,
+    opacity: 0,
+    delay: 0.5,
+    stagger: 0.5,
+    ease: 'elastic',
+    force3D: true,
+  })
+})
+
+// Preloader Settings
+gsap.from('.status', { rotateX: 360, repeat: -1, duration: 1 })
+$(window).on('load', function () {
+  $('.preloader').fadeOut(500)
 })
