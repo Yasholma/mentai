@@ -1128,8 +1128,8 @@ body.dark .board {
   }
 
   .custom-checkbox {
-    bottom: 8.3rem;
-    width: 90%;
+    bottom: 4rem;
+    width: 100%;
     left: 1rem;
   }
 }
@@ -1169,27 +1169,3 @@ body.dark .board {
     transform: rotateX(0);
   }
 }
-
-/* .status::before {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 90px;
-  height: 90px;
-  content: '';
-  border: 7px solid var(--primary-color);
-  border-radius: 5rem;
-}
-
-.status::after {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 90px;
-  height: 90px;
-  content: '';
-  border: 7px solid var(--primary-color);
-  border-radius: 5rem;
-} */
