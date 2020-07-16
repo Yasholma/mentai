@@ -1,0 +1,1135 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Poppins:wght@400;500;600&display=swap');
+
+:root {
+  --primary-color: #0073fb;
+  --secondary-color: #a2cdff;
+  --text-color: #333333;
+  --black-color: #000;
+  --light-mode: #fff;
+  --dark-mode: #011751;
+  --header-font: 'Playfair Display', serif;
+  --text-font: 'Poppins', sans-serif;
+  --code-bg: #f4f9ff;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  font-family: var(--text-font);
+  font-size: 1rem;
+  color: var(--text-color);
+  transition: all 0.3s ease-in-out;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--header-font);
+}
+
+/* *** Overrides *** */
+.btn-primary {
+  background: var(--primary-color);
+}
+.btn {
+  font-size: 0.8rem;
+  padding: 0.7rem 1.8rem;
+}
+
+#theme-switch {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.content-box {
+  padding: 3.5rem 0;
+}
+/* Logo */
+.logo-dark {
+  display: none;
+}
+
+/* Hero Styling */
+
+.body-img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 35%;
+}
+
+.mobile-arc {
+  position: absolute;
+  margin: auto;
+  left: 50%;
+  top: 6rem;
+  transform: translateX(-50%);
+  display: none;
+}
+
+.hero-content {
+  width: 85%;
+}
+
+.hero-header {
+  font-weight: 900;
+  font-size: 3rem;
+  line-height: 4rem;
+  margin-bottom: 2rem;
+}
+
+.hero-header span {
+  color: var(--primary-color);
+}
+
+.hero-text {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--text-font);
+  margin-bottom: 1.5rem;
+  width: 80%;
+}
+
+.hero-form label {
+  color: var(--black-color);
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Custom Input Styling */
+.custom-input {
+  position: relative;
+  margin-bottom: 5rem;
+}
+
+.custom-input .form-control {
+  position: absolute;
+  padding: 1.7rem;
+  font-size: 0.8rem;
+}
+
+.custom-input .form-control.white-mode {
+  box-shadow: -2px 0 14px rgba(186, 207, 238, 0.38);
+  border: 0;
+}
+
+.custom-input .form-control:focus {
+  box-shadow: 0 0 5px #0073fb;
+}
+
+.custom-input .form-control.error {
+  box-shadow: -2px 0px 8px #fb000d;
+}
+
+.custom-input .btn {
+  position: absolute;
+  padding: 1.04rem 2.3rem;
+  right: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  font-weight: 600;
+  font-family: var(--text-font);
+}
+
+/* Custom Checkbox */
+.custom-checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.custom-checkbox label {
+  font-size: 0.8rem;
+  font-weight: 500;
+  display: inline-block;
+  margin-top: 0.24rem;
+  margin-left: 0.2rem;
+  font-weight: 500;
+}
+
+/* Pages Slider */
+.pages-slider {
+  padding-bottom: 1.5rem;
+}
+
+.page img {
+  width: 90%;
+  margin: auto 0;
+}
+
+/* SLick Slider Dot Styling */
+.slick-slide,
+.slick-slide * {
+  outline: none !important;
+}
+
+.slick-slider li {
+  margin: 0 2px;
+}
+
+.dot {
+  display: inline-block;
+  background: var(--secondary-color);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.dot:hover {
+  background: var(--primary-color);
+}
+
+.slick-active .dot {
+  background: var(--primary-color);
+}
+
+/* ** Info Section Styling ** */
+
+.info-heading {
+  font-size: 1.7rem;
+}
+
+.info-text {
+  width: 60%;
+  margin: 1.5rem auto;
+}
+
+.info-steps {
+  margin: 2rem auto;
+}
+
+.info-step {
+  background: #ffffff;
+  box-shadow: 1px 2px 32px rgba(0, 0, 0, 0.1);
+  border-radius: 32px;
+  width: 330px;
+  height: 380px;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.info-step:hover {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(5px);
+}
+
+.info-step-text {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+/* Guide Style */
+.guides {
+  margin: 8rem 0 5rem;
+}
+.guide {
+  padding-top: 5rem;
+}
+
+.guide-content {
+  width: 80%;
+}
+
+.guide-heading {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.guide-text {
+  width: 80%;
+  font-size: 0.9rem;
+  margin: 1.5rem 0;
+  line-height: 1.5;
+}
+
+.guide-img {
+  width: 320px;
+  margin: auto;
+}
+
+/* Description Style */
+.description {
+  background: var(--primary-color);
+  color: var(--light-mode);
+  text-align: center;
+  margin-bottom: 5rem;
+  padding: 4rem 0;
+}
+
+.description-heading {
+  font-family: var(--text-font);
+  line-height: 1.3;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.description-text {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+/* Learning Style */
+.learning .guide-heading {
+  width: 65%;
+  margin-top: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+/* Code Styling */
+.code-title {
+  margin-top: 30%;
+  width: 80%;
+  line-height: 1.3;
+}
+.code-container {
+  width: 500px;
+  height: 500px;
+  background: var(--code-bg);
+  border-radius: 50%;
+  position: relative;
+}
+.code-img {
+  position: absolute;
+  transition: all 0.5s;
+}
+
+.code-img:hover {
+  transform: scale(1.1);
+  z-index: 4;
+}
+
+.code-img-sm {
+  width: 250px;
+  left: 0;
+  top: 25%;
+}
+
+.code-img-lg {
+  right: 0;
+  top: 15%;
+  width: 350px;
+  z-index: 3;
+}
+
+/* Launch Styling */
+.launch-heading {
+  font-size: 1.7rem;
+}
+
+.launch-text {
+  width: 90%;
+  margin: 1.5rem auto;
+  font-weight: 500;
+}
+
+.launch-countdown {
+  background: var(--primary-color);
+  padding: 2rem;
+  color: var(--light-mode);
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.launch-countdown .countdown {
+  position: relative;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.launch-countdown span.time {
+  display: block;
+  font-size: 3.5rem;
+  margin-bottom: -1rem;
+}
+
+.launch-countdown span.delimeter {
+  display: inline-block;
+  background: #fff;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+}
+
+.launch-countdown span.delimeter::before {
+  content: '';
+  display: inline-block;
+  background: #fff;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  position: absolute;
+  top: -3rem;
+  right: 0;
+}
+
+/* Board Styling */
+.board {
+  background: var(--code-bg);
+  height: 400px;
+  margin: 10rem 0 13rem;
+}
+
+.board .container {
+  position: relative;
+}
+
+.board img {
+  width: 300px;
+  position: absolute;
+  top: -10rem;
+}
+
+.footer {
+  background: var(--primary-color);
+  padding: 2rem;
+  color: var(--light-mode);
+}
+
+.copyright {
+  margin: 0;
+}
+
+/* *** Sweet Alert Style *** */
+.swal-overlay {
+  background-color: rgba(16, 121, 207, 0.45);
+}
+
+.swal-button {
+  padding: 0.6rem 2.5rem;
+  border-radius: 0.25rem;
+  background-color: var(--primary-color);
+  font-size: 0.8rem;
+  border: none;
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3);
+}
+
+.swal-button:hover {
+  background: var(--secondary-color);
+}
+
+/* *** Dark Mode Styling *** */
+body.dark {
+  background: var(--dark-mode);
+  color: var(--light-mode);
+}
+
+body.dark .logo-light {
+  display: none;
+}
+
+body.dark .logo-dark {
+  display: block;
+}
+
+body.dark .hero-form label {
+  color: var(--light-mode);
+}
+
+body.dark .info-step {
+  background: var(--primary-color);
+}
+
+body.dark .info-step-img svg circle {
+  fill: var(--light-mode);
+}
+
+body.dark .code-container {
+  background: var(--secondary-color);
+}
+
+body.dark .board {
+  background: rgba(244, 249, 255, 0.2);
+}
+/* End Of Dark Mode Styling */
+
+/* *** Responsive Styling *** */
+
+/* Medium Desktop Scree */
+@media (min-width: 991px) and (max-width: 1200px) {
+  .info-step {
+    width: 300px;
+  }
+
+  .info-text {
+    width: 80%;
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1000px) {
+  /* Hero Styling */
+  .hero-content {
+    width: 90%;
+  }
+
+  .hero-header {
+    font-size: 2.3rem;
+    line-height: 3rem;
+  }
+
+  .hero-text {
+    font-size: 0.9rem;
+    width: 90%;
+  }
+
+  .hero-form label {
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+  }
+
+  /* Info Styling */
+  .info .content-box {
+    padding-top: 2rem;
+  }
+
+  .info-heading {
+    font-size: 1.7rem;
+  }
+  .info-text {
+    width: 90%;
+  }
+
+  /* Guide Style */
+  .guide-content {
+    width: 90%;
+  }
+
+  .guide-heading {
+    font-size: 1.3rem;
+  }
+  .guide-text {
+    font-size: 0.85rem;
+    line-height: 2;
+    width: 100%;
+  }
+
+  /* Description */
+  .description .content-box {
+    padding: 1rem 0;
+  }
+
+  /* Learning Style */
+  .learning .guide-heading {
+    width: 100%;
+  }
+
+  /* Code Styling */
+  .code-title {
+    margin-top: 35%;
+    font-size: 1.4rem;
+    line-height: 1.5;
+  }
+
+  .code-container {
+    width: 400px;
+    height: 400px;
+  }
+
+  .code-img-sm {
+    width: 200px;
+  }
+
+  .code-img-lg {
+    width: 300px;
+  }
+
+  /* Launching Style */
+  .launch-text {
+    width: 100%;
+  }
+
+  .launch-countdown {
+    padding: 1.5rem 0;
+    font-size: 1rem;
+  }
+
+  .launch-countdown span.time {
+    font-size: 2.5rem;
+    display: block;
+    margin-bottom: -0.5rem;
+  }
+
+  .launch-countdown span.delimeter {
+    width: 10px;
+    height: 10px;
+    right: -0.4rem;
+    top: 3.5rem;
+  }
+
+  .launch-countdown span.delimeter::before {
+    width: 10px;
+    height: 10px;
+    top: -2rem;
+    right: 0;
+  }
+}
+/* End of Tablet Stying */
+
+/* Portrait Tablet */
+@media (min-width: 426px) and (max-width: 767px) {
+  /* Body Image */
+  .body-img {
+    display: none;
+  }
+  .mobile-arc {
+    display: block;
+  }
+
+  /* Content Box */
+  .content-box {
+    padding-bottom: 1.5rem;
+  }
+
+  /* Hero Styling */
+  .hero-content-container {
+    order: 2;
+  }
+
+  .hero-sliders {
+    order: 1;
+  }
+
+  .hero-content {
+    width: 100%;
+  }
+
+  .hero-header {
+    font-size: 1.9rem;
+    line-height: 1.3;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .hero-header {
+    font-size: 2.5rem;
+    line-height: 1.3;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .hero-text {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--text-font);
+    margin-bottom: 1.5rem;
+    width: 80%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-form label {
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+    margin-left: auto;
+  }
+
+  .custom-input .btn {
+    padding: 1.05rem 2.3rem;
+  }
+
+  .custom-checkbox label {
+    font-size: 0.8rem;
+    font-weight: 500;
+    display: inline-block;
+    margin-top: 0.24rem;
+    margin-left: 0.4rem;
+    font-weight: 500;
+  }
+
+  /* Info styling */
+  .info-heading {
+    font-size: 1.6rem;
+    line-height: 1.4;
+  }
+
+  .info-text {
+    width: 100%;
+    font-size: 0.9rem;
+    line-height: 1.7;
+    margin: 1rem auto;
+  }
+
+  /* Info */
+  .info .content-box {
+    padding: 0.5rem 0 !important;
+  }
+
+  /* Info Step Styling */
+  .info-step {
+    width: 80%;
+    margin: 1rem auto;
+  }
+
+  /* Guide */
+  .guides {
+    margin: 3rem 0;
+    text-align: center;
+    position: relative;
+    padding-bottom: 6rem;
+  }
+
+  .guides .btn {
+    position: absolute;
+    bottom: -41rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .guide-image-container {
+    order: 2;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .guide {
+    padding-top: 0;
+    order: 1;
+  }
+
+  .guides .guide-content {
+    width: 100%;
+  }
+
+  .guide-heading {
+    font-size: 1.5rem;
+  }
+
+  .guide-text {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+  }
+
+  /* *** Button Style to extract *** */
+  .guide .btn {
+    width: 80%;
+    padding: 0.9rem 1rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+  }
+
+  /* Description */
+  .description {
+    padding: 0.5rem 0;
+    margin-bottom: 2rem;
+  }
+
+  .description .content-box {
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .description-heading {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: var(--light-mode);
+  }
+
+  .description-text {
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+
+  /* Learning */
+  .learning .guide-heading,
+  .code-title {
+    width: 100%;
+    text-align: center;
+    margin: 2rem auto;
+  }
+
+  .code-title {
+    font-size: 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .code-container {
+    width: 350px;
+    height: 350px;
+    margin: auto;
+  }
+
+  .code-img-sm {
+    width: 150px;
+  }
+
+  .code-img-lg {
+    width: 230px;
+  }
+
+  /* Launch Styling */
+  .launch-heading {
+    font-size: 1.5rem;
+  }
+
+  .launch-text {
+    width: 100%;
+    font-size: 0.8rem;
+  }
+
+  .launch-countdown {
+    padding: 1rem 0;
+    font-size: 0.8rem;
+  }
+
+  .launch-countdown span.time {
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+
+  .launch-countdown span.delimeter {
+    width: 10px;
+    height: 10px;
+    right: -0.2rem;
+    top: 1.8rem;
+  }
+
+  .launch-countdown span.delimeter::before {
+    width: 10px;
+    height: 10px;
+    top: -1.5rem;
+  }
+
+  /* Board Styling */
+  .board {
+    height: 150px;
+    margin: 5rem 0 5rem;
+  }
+
+  .board .container {
+    position: relative;
+  }
+
+  .board img {
+    width: 100px;
+    position: absolute;
+    top: -5rem;
+  }
+
+  .footer {
+    font-size: 1rem;
+  }
+}
+/* End of Portrait Tablet */
+
+/* Mobile Devices */
+@media (max-width: 426px) {
+  /* Body Image */
+  .body-img {
+    display: none;
+  }
+
+  .mobile-arc {
+    display: block;
+  }
+
+  /* Content Box */
+  .content-box {
+    padding-bottom: 1.5rem;
+  }
+
+  /* Hero Styling */
+  .hero-content-container {
+    order: 2;
+  }
+
+  .hero-sliders {
+    order: 1;
+  }
+
+  .hero-content {
+    width: 100%;
+  }
+
+  .hero-header {
+    font-size: 1.9rem;
+    line-height: 1.3;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .hero-text {
+    font-size: 0.8rem;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .pages-slider {
+    width: 100%;
+  }
+
+  .page img {
+    width: 70%;
+    margin: auto;
+  }
+
+  /* Form Styling */
+  .hero-form label {
+    width: 100%;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  /* Custom Input */
+  .custom-input {
+    position: static;
+    margin-bottom: 4rem;
+  }
+
+  .custom-input .form-control {
+    position: static;
+    margin-bottom: 1rem;
+  }
+
+  .custom-input .btn {
+    position: static;
+    padding: 1.03rem 2.3rem;
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+    width: 80%;
+    margin-top: 4rem;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .custom-checkbox {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    order: 2;
+    position: absolute;
+    bottom: 9rem;
+    left: 2rem;
+  }
+
+  .custom-checkbox label {
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-align: left;
+    margin-left: 0.4rem;
+  }
+
+  /* Info */
+  .info .content-box {
+    padding: 0.5rem 0 !important;
+  }
+
+  .info-heading {
+    font-size: 1.2rem;
+    line-height: 1.4;
+  }
+
+  .info-text {
+    width: 100%;
+    font-size: 0.8rem;
+    line-height: 1.7;
+    margin: 1rem auto;
+  }
+
+  /* Info Step Styling */
+  .info-step {
+    width: 100%;
+    margin: 1rem auto;
+  }
+
+  /* Guide */
+  .guides {
+    margin: 3rem 0;
+    text-align: center;
+    position: relative;
+    padding-bottom: 6rem;
+  }
+
+  .guides .btn {
+    position: absolute;
+    bottom: -41rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .guide-image-container {
+    order: 2;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .guide {
+    padding-top: 0;
+    order: 1;
+  }
+
+  .guides .guide-content {
+    width: 100%;
+  }
+
+  .guide-heading {
+    font-size: 1rem;
+  }
+
+  .guide-text {
+    width: 100%;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+  }
+
+  /* *** Button Style to extract *** */
+  .guide .btn {
+    width: 80%;
+    padding: 0.9rem 1rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+  }
+
+  /* Description */
+  .description {
+    padding: 0.5rem 0;
+    margin-bottom: 2rem;
+  }
+
+  .description .content-box {
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .description-heading {
+    font-size: 1.03rem;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: var(--light-mode);
+  }
+
+  .description-text {
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+
+  /* Learning */
+  .learning .guide-heading,
+  .code-title {
+    width: 100%;
+    text-align: center;
+    margin: 2rem auto;
+  }
+
+  .code-title {
+    font-size: 1rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .code-container {
+    width: 350px;
+    height: 350px;
+    margin: auto;
+  }
+
+  .code-img-sm {
+    width: 150px;
+  }
+
+  .code-img-lg {
+    width: 230px;
+  }
+
+  /* Launch Styling */
+  .launch-heading {
+    font-size: 1.2rem;
+  }
+
+  .launch-text {
+    width: 100%;
+    font-size: 0.8rem;
+  }
+
+  .launch-countdown {
+    padding: 1rem 0;
+    font-size: 0.8rem;
+  }
+
+  .launch-countdown span.time {
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+
+  .launch-countdown span.delimeter {
+    width: 10px;
+    height: 10px;
+    right: -0.2rem;
+    top: 1.8rem;
+  }
+
+  .launch-countdown span.delimeter::before {
+    width: 10px;
+    height: 10px;
+    top: -1.5rem;
+  }
+
+  /* Board Styling */
+  .board {
+    height: 150px;
+    margin: 5rem 0 5rem;
+  }
+
+  .board .container {
+    position: relative;
+  }
+
+  .board img {
+    width: 100px;
+    position: absolute;
+    top: -5rem;
+  }
+
+  .footer {
+    font-size: 1rem;
+  }
+}
+/* End Of Mobile Style */
+
+/* Small Phones - Iphone 5  */
+@media (max-width: 320px) {
+  .navbar a[href='#email'] {
+    display: none;
+  }
+
+  .custom-checkbox {
+    bottom: 8.3rem;
+    width: 90%;
+    left: 1rem;
+  }
+}
