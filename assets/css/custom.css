@@ -1155,6 +1155,19 @@ body.dark .board {
   border-radius: 1.5rem;
   position: relative;
   background: url('../img/preloader.svg');
+  animation: rotateX 1.5s ease infinite;
+}
+
+@keyframes rotateX {
+  from {
+    transform: rotateX(180deg);
+  }
+  50% {
+    transform: rotateY(360deg);
+  }
+  100% {
+    transform: rotateX(0);
+  }
 }
 
 /* .status::before {

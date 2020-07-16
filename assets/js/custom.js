@@ -223,7 +223,6 @@ $(function () {
 })
 
 // Preloader Settings
-gsap.from('.status', { rotateX: 360, repeat: -1, duration: 1 })
 $(window).on('load', function () {
-  $('.preloader').fadeOut(500)
+  $('.preloader').slideUp(1000)
 })
