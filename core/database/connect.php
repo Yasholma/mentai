@@ -1,10 +1,10 @@
 <?php
     class Connection {
 
-        private $dbhost = "localhost"; // 127.0.0.1
-        private $user = "root";
-        private $dbname = "mentai";
-        private $password = "mysql";
+        private $dbhost = "us-cdbr-east-02.cleardb.com"; // 127.0.0.1
+        private $user = "bb2b025774e246";
+        private $password = "be56c15b";
+        private $dbname = "heroku_4b36708a8d064fb";
 
         private $connection = null;
 
