@@ -21,6 +21,8 @@
     <!-- Slick Slider CSS -->
     <link rel="stylesheet" href="./assets/css/slick/slick.css" />
     <link rel="stylesheet" href="./assets/css/slick/slick-theme.css" />
+    <!-- Animate on Scroll (AOS) CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- Custom -->
     <link rel="stylesheet" href="./assets/css/custom.css" />
   </head>
@@ -30,13 +32,18 @@
       <div class="status"></div>
     </div>
     <!-- *** Landing Starts *** -->
-    <div class="landing">
-      <img src="./assets/img/init-arc.svg" alt="" class="body-img" />
+    <div class="landing" id="landing">
+      <img src="./assets/img/init-arc.svg" alt="Arc" class="body-img" />
       <!-- ** Header Start ** -->
       <header>
         <nav class="navbar">
           <div class="container">
-            <a class="navbar-brand" href="./index.html">
+            <a
+              class="navbar-brand"
+              data-aos="zoom-in"
+              data-aos-duration="2000"
+              href="./index.html"
+            >
               <img
                 src="./assets/img/logo-white.svg"
                 alt="Logo"
@@ -49,8 +56,21 @@
               />
             </a>
             <div class="ml-auto">
-              <a href="#email" class="btn btn-primary">Get Notified</a>
-              <button class="btn btn-dark" id="theme-switch">
+              <a
+                href="#email"
+                class="btn btn-primary"
+                data-aos="fade-down"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="1000"
+                >Get Notified</a
+              >
+              <button
+                class="btn btn-dark"
+                id="theme-switch"
+                data-aos="fade-down"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="1000"
+              >
                 <i class="fas fa-sun fa-lg"></i>
               </button>
             </div>
@@ -68,7 +88,7 @@
               <div class="col-md-7 hero-content-container">
                 <div class="hero-content">
                   <!-- Hero Header -->
-                  <h1 class="hero-header">
+                  <h1 class="hero-header" data-aos="fade-left">
                     Writing Codes <br />
                     with An
                     <span
@@ -79,7 +99,7 @@
                   </h1>
 
                   <!-- Hero Text -->
-                  <p class="hero-text">
+                  <p class="hero-text" data-aos="fade-right">
                     This app offers simple, bite-sized explainers to help
                     anyone, from beginner to experts, learn how to structure
                     codes to develop working products.
@@ -88,8 +108,10 @@
                   <!-- Subscribe Form -->
                   <div class="hero-form">
                     <form method="POST">
-                      <label for="email">Subcribe for Product Newsletter</label>
-                      <div class="custom-input">
+                      <label for="email" data-aos="fade-right"
+                        >Subcribe for Product Newsletter</label
+                      >
+                      <div class="custom-input" data-aos="fade-up">
                         <input
                           type="email"
                           id="email"
@@ -117,7 +139,12 @@
                           Loading...
                         </button>
                       </div>
-                      <div class="custom-checkbox mt-5">
+                      <div
+                        class="custom-checkbox mt-5"
+                        data-aos="fade-up-right"
+                        data-aos-easing="ease-out-cubic"
+                        data-aos-duration="1000"
+                      >
                         <input
                           type="checkbox"
                           class="checkbox"
@@ -134,7 +161,13 @@
                 </div>
               </div>
               <div class="col-md-5 hero-sliders">
-                <div class="pages-slider" id="page-sliders">
+                <div
+                  class="pages-slider"
+                  id="page-sliders"
+                  data-aos="zoom-in"
+                  data-aos-easing="ease-out-cubic"
+                  data-aos-duration="1000"
+                >
                   <!-- Start Page -->
                   <div class="page text-center">
                     <a href="./assets/img/hero-img.svg">
@@ -145,41 +178,74 @@
                       />
                     </a>
                   </div>
+                  <!-- Assessment Page -->
+                  <div class="page text-center">
+                    <a
+                      href="./assets/img/pages/Questions.png"
+                      title="Assessment Page"
+                    >
+                      <img
+                        src="./assets/img//hero-question.png"
+                        alt="Slider Item"
+                        class="img-fluid"
+                      />
+                    </a>
+                  </div>
                   <!-- Sign Up Page -->
                   <div class="page text-center">
-                    <a href="./assets/img/hero-img.svg">
+                    <a href="./assets/img/pages/signup.png" title="Sign Up">
                       <img
-                        src="./assets/img/hero-img.svg"
+                        src="./assets/img/signup.png"
                         alt="Slider Item"
                         class="img-fluid"
                       />
                     </a>
                   </div>
+
                   <!-- Login Page -->
                   <div class="page text-center">
-                    <a href="./assets/img/hero-img.svg">
+                    <a href="./assets/img/pages/LOGIN.png" title="Login Page">
                       <img
-                        src="./assets/img/hero-img.svg"
+                        src="./assets/img/hero-login.png"
                         alt="Slider Item"
                         class="img-fluid"
                       />
                     </a>
                   </div>
-                  <!-- Login Page -->
+                  <!-- Dashoard Page -->
                   <div class="page text-center">
-                    <a href="./assets/img/hero-img.svg">
+                    <a
+                      href="./assets/img/pages/DASHBOARD.png"
+                      title="Dashboard"
+                    >
                       <img
-                        src="./assets/img/hero-img.svg"
+                        src="./assets/img/hero-dashboard.png"
                         alt="Slider Item"
                         class="img-fluid"
                       />
                     </a>
                   </div>
-                  <!-- Login Page -->
+                  <!-- Community Page -->
                   <div class="page text-center">
-                    <a href="./assets/img/hero-img.svg">
+                    <a
+                      href="./assets/img/pages/COMMUNITYY.png"
+                      title="Community Page"
+                    >
                       <img
-                        src="./assets/img/hero-img.svg"
+                        src="./assets/img/hero-community.png"
+                        alt="Slider Item"
+                        class="img-fluid"
+                      />
+                    </a>
+                  </div>
+                  <!-- Get Badges Page -->
+                  <div class="page text-center">
+                    <a
+                      href="./assets/img/pages/BADGES.png"
+                      title="Get Badges Page"
+                    >
+                      <img
+                        src="./assets/img/hero-badge.png"
                         alt="Slider Item"
                         class="img-fluid"
                       />
@@ -199,10 +265,10 @@
           <div class="container">
             <div class="row">
               <div class="col-md-12 text-center">
-                <h2 class="info-heading">
+                <h2 class="info-heading" data-aos="zoom-in-down">
                   Mentorship Made Easy For Every Enthusiast
                 </h2>
-                <p class="info-text">
+                <p class="info-text" data-aos="zoom-in-up">
                   MentAI is an AI that mentors you on how to become and software
                   programmer. With recommends, test and resources, the AI mentor
                   helps you set a curriculum that helps you learn how to write
@@ -215,7 +281,7 @@
 
             <div class="row info-steps">
               <div class="col-12 col-md-6 col-lg-4">
-                <div class="info-step">
+                <div class="info-step" data-aos="fade-right">
                   <div class="info-step-img mt-3">
                     <svg
                       width="108"
@@ -231,7 +297,7 @@
                       />
                     </svg>
                   </div>
-                  <p class="info-step-text">
+                  <p class="info-step-text" data-aos="flip-left">
                     Coding languages been taught from start to finish.
                     Assessments and coding materials all made avaiable on the
                     app. The mentor woul help users pick what language to start
@@ -241,7 +307,7 @@
                 </div>
               </div>
               <div class="col-12 col-md-6 col-lg-4">
-                <div class="info-step">
+                <div class="info-step" data-aos="flip-down">
                   <div class="info-step-img mt-3">
                     <svg
                       width="108"
@@ -268,7 +334,7 @@
               <div
                 class="col-12 col-md-6 mx-auto col-lg-4 mt-md-3 mt-lg-0 mt-0"
               >
-                <div class="info-step">
+                <div class="info-step" data-aos="fade-left">
                   <div class="info-step-img mt-3">
                     <svg
                       width="108"
@@ -311,24 +377,38 @@
                   <a href="#email" class="btn btn-primary">Get Notified</a>
                 </div>
               </div>
-              <div class="col-md-6 guide-image-container" id="signup">
-                <a href="./assets/img/iphone.png" title="SignUp Page">
+              <div class="col-md-6 guide-image-container" id="question">
+                <a
+                  href="./assets/img/pages/Questions.png"
+                  title="Questions Page"
+                >
                   <img
-                    src="./assets/img/iphone.png"
+                    src="./assets/img/questions.svg"
                     alt="Guide"
                     class="guide-img"
+                    data-aos="zoom-in-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1000"
                   />
                 </a>
               </div>
             </div>
 
             <div class="row guides">
-              <div class="col-md-6 text-center guide-image-container">
-                <img
-                  src="./assets/img/iphone.png"
-                  alt="Guide"
-                  class="guide-img"
-                />
+              <div
+                class="col-md-6 text-center guide-image-container"
+                id="signup"
+              >
+                <a href="./assets/img/pages/signup.png" title="Sign Up Page">
+                  <img
+                    src="./assets/img/iphone.png"
+                    alt="Guide"
+                    class="guide-img"
+                    data-aos="zoom-in-right"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1000"
+                  />
+                </a>
               </div>
 
               <div class="col-md-6 guide">
@@ -375,24 +455,38 @@
         <div class="content-box">
           <div class="container">
             <div class="row">
-              <div class="col-md-6 text-center">
-                <img
-                  src="./assets/img/iphone.png"
-                  alt="Guide"
-                  class="guide-img"
-                />
+              <div class="col-md-6 text-center" id="badge">
+                <a href="./assets/img/pages/BADGES.png" title="Get Badges">
+                  <img
+                    src="./assets/img/badges.png"
+                    alt="Guide"
+                    class="guide-img"
+                    data-aos="zoom-in-up"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1000"
+                  />
+                </a>
               </div>
               <div class="col-md-6">
                 <h3 class="guide-heading">
-                  The AI Mentor starts off with a mini test to help guide you
-                  through your path and where to beginner
+                  Get reward for your excellence and get into communities to
+                  help meet humans, network, help with projects and solve
+                  problems
                 </h3>
-                <div class="text-center">
-                  <img
-                    src="./assets/img/iphone.png"
-                    alt="Guide"
-                    class="guide-img"
-                  />
+                <div class="text-center" id="community">
+                  <a
+                    href="./assets/img/pages/COMMUNITYY.png"
+                    title="Join the Community"
+                  >
+                    <img
+                      src="./assets/img/badge-2.png"
+                      alt="Guide"
+                      class="guide-img"
+                      data-aos="zoom-in-down"
+                      data-aos-easing="ease-out-cubic"
+                      data-aos-duration="1000"
+                    />
+                  </a>
                 </div>
               </div>
             </div>
@@ -471,7 +565,12 @@
             <!-- Count Down -->
             <div class="row">
               <div class="col-md-10 mx-auto">
-                <div class="launch-countdown row no-gutters">
+                <div
+                  class="launch-countdown row no-gutters"
+                  data-aos="flip-down"
+                  data-aos-easing="ease-out-cubic"
+                  data-aos-duration="1000"
+                >
                   <div class="col-md-3 col-3 countdown">
                     <span class="time days">0</span>
                     <span class="delimeter"></span>
@@ -504,12 +603,24 @@
         <div class="content-box">
           <div class="container">
             <div class="row">
-              <div class="col-md-12">
+              <div class="col-md-4">
                 <img
                   src="./assets/img/footer-phone.png"
                   alt="Board"
                   class="img-fluid"
                 />
+              </div>
+              <div class="col-md-8 col-8 ml-auto">
+                <h3 class="board-title">
+                  Be the first to know
+                </h3>
+                <p class="board-text">
+                  This product is built to help you, as such we want you t be
+                  part of every process. Kindly provide the detail below to get
+                  a notification for the first testing phase. We want you to
+                  have the first experience
+                </p>
+                <a href="#email" class="btn btn-primary">Notify Me</a>
               </div>
             </div>
           </div>
@@ -522,6 +633,24 @@
         <p class="copyright">2020 &copy; Copyrights Reserved</p>
       </footer>
       <!-- Footer -->
+
+      <!-- Scroll Up -->
+      <div class="toUp">
+        <a href="#landing" class="img-fluid">
+          <svg
+            width="52"
+            height="62"
+            viewBox="0 0 52 62"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M28.4089 0.990978L50.7998 23.3814C51.439 24.0205 51.7898 24.8724 51.7898 25.7807C51.7898 26.69 51.4385 27.5414 50.7998 28.1805L48.7664 30.2134C48.1283 30.8521 47.2759 31.2039 46.3671 31.2039C45.4588 31.2039 44.5777 30.8521 43.9396 30.2134L30.8486 17.1512L30.8486 58.6505C30.8486 60.5216 29.3838 62 27.5122 62L24.6375 62C22.766 62 21.1535 60.5216 21.1535 58.6505L21.1535 17.003L7.98942 30.2129C7.35027 30.8516 6.52109 31.2034 5.61227 31.2034C4.70446 31.2034 3.86318 30.8516 3.22453 30.2129L1.1977 28.18C0.558556 27.5409 0.210251 26.6895 0.210251 25.7802C0.210251 24.8719 0.563092 24.02 1.20224 23.3809L23.5926 0.990474C24.2338 0.349811 25.0897 -0.00252565 25.9995 -4.12224e-06C26.9124 -0.00202209 27.7688 0.349811 28.4089 0.990978Z"
+              fill="white"
+            />
+          </svg>
+        </a>
+      </div>
     </div>
     <!-- Landing Ends -->
 
@@ -539,8 +668,8 @@
     <script src="./assets/js/slick/slick.min.js"></script>
     <!-- SweetAlert -->
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <!-- GSAP -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js"></script>
+    <!-- Animate on Scroll (AOS) JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- custom -->
     <script src="./assets/js/custom.js"></script>
   </body>
