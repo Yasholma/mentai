@@ -84,8 +84,8 @@ $(function () {
               })
           } else if (res.trim() === 'EXIST') {
             swal({
-              text: 'Thank you! An email has been sent to your mail box.',
-              icon: 'success',
+              text: 'Thank you! Your email has already been saved.',
+              icon: 'info',
               button: 'Close',
             }).then(() => {
               location.reload()
