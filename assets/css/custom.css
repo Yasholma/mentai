@@ -155,7 +155,6 @@ h6 {
 /* Pages Slider */
 .pages-slider {
   padding-bottom: 1.5rem;
-  overflow: hidden;
 }
 
 .page img {
@@ -483,11 +482,15 @@ body.dark .info-step-img svg circle {
 }
 
 body.dark .code-container {
-  background: var(--secondary-color);
+  background: rgba(162, 205, 255, 0.2);
 }
 
 body.dark .board {
   background: rgba(244, 249, 255, 0.2);
+}
+
+body.dark .custom-input .form-control {
+  box-shadow: none;
 }
 /* End Of Dark Mode Styling */
 
