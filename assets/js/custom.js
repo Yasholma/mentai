@@ -131,7 +131,10 @@ $('.pages-slider').slick({
 
 $(function () {
   magnifyImages('page-sliders', true)
+  magnifyImages('question')
   magnifyImages('signup')
+  magnifyImages('badge')
+  magnifyImages('community')
 })
 
 // Function that Adds images to magnify popup

@@ -26,13 +26,13 @@
     <!-- Custom -->
     <link rel="stylesheet" href="./assets/css/custom.css" />
   </head>
-  <body class="dark">
+  <body>
     <!-- *** Preloader *** -->
     <div class="preloader">
       <div class="status"></div>
     </div>
     <!-- *** Landing Starts *** -->
-    <div class="landing">
+    <div class="landing" id="landing">
       <img src="./assets/img/init-arc.svg" alt="Arc" class="body-img" />
       <!-- ** Header Start ** -->
       <header>
@@ -178,41 +178,74 @@
                       />
                     </a>
                   </div>
+                  <!-- Assessment Page -->
+                  <div class="page text-center">
+                    <a
+                      href="./assets/img/pages/Questions.png"
+                      title="Assessment Page"
+                    >
+                      <img
+                        src="./assets/img//hero-question.png"
+                        alt="Slider Item"
+                        class="img-fluid"
+                      />
+                    </a>
+                  </div>
                   <!-- Sign Up Page -->
                   <div class="page text-center">
-                    <a href="./assets/img/hero-img.svg">
+                    <a href="./assets/img/pages/signup.png" title="Sign Up">
                       <img
-                        src="./assets/img/hero-img.svg"
+                        src="./assets/img/signup.png"
                         alt="Slider Item"
                         class="img-fluid"
                       />
                     </a>
                   </div>
+
                   <!-- Login Page -->
                   <div class="page text-center">
-                    <a href="./assets/img/hero-img.svg">
+                    <a href="./assets/img/pages/LOGIN.png" title="Login Page">
                       <img
-                        src="./assets/img/hero-img.svg"
+                        src="./assets/img/hero-login.png"
                         alt="Slider Item"
                         class="img-fluid"
                       />
                     </a>
                   </div>
-                  <!-- Login Page -->
+                  <!-- Dashoard Page -->
                   <div class="page text-center">
-                    <a href="./assets/img/hero-img.svg">
+                    <a
+                      href="./assets/img/pages/DASHBOARD.png"
+                      title="Dashboard"
+                    >
                       <img
-                        src="./assets/img/hero-img.svg"
+                        src="./assets/img/hero-dashboard.png"
                         alt="Slider Item"
                         class="img-fluid"
                       />
                     </a>
                   </div>
-                  <!-- Login Page -->
+                  <!-- Community Page -->
                   <div class="page text-center">
-                    <a href="./assets/img/hero-img.svg">
+                    <a
+                      href="./assets/img/pages/COMMUNITYY.png"
+                      title="Community Page"
+                    >
                       <img
-                        src="./assets/img/hero-img.svg"
+                        src="./assets/img/hero-community.png"
+                        alt="Slider Item"
+                        class="img-fluid"
+                      />
+                    </a>
+                  </div>
+                  <!-- Get Badges Page -->
+                  <div class="page text-center">
+                    <a
+                      href="./assets/img/pages/BADGES.png"
+                      title="Get Badges Page"
+                    >
+                      <img
+                        src="./assets/img/hero-badge.png"
                         alt="Slider Item"
                         class="img-fluid"
                       />
@@ -251,7 +284,6 @@
                 <div class="info-step" data-aos="fade-right">
                   <div class="info-step-img mt-3">
                     <svg
-                      data-aos="flip-right"
                       width="108"
                       height="108"
                       viewBox="0 0 108 108"
@@ -345,10 +377,13 @@
                   <a href="#email" class="btn btn-primary">Get Notified</a>
                 </div>
               </div>
-              <div class="col-md-6 guide-image-container" id="signup">
-                <a href="./assets/img/iphone.png" title="SignUp Page">
+              <div class="col-md-6 guide-image-container" id="question">
+                <a
+                  href="./assets/img/pages/Questions.png"
+                  title="Questions Page"
+                >
                   <img
-                    src="./assets/img/iphone.png"
+                    src="./assets/img/questions.svg"
                     alt="Guide"
                     class="guide-img"
                     data-aos="zoom-in-left"
@@ -360,8 +395,11 @@
             </div>
 
             <div class="row guides">
-              <div class="col-md-6 text-center guide-image-container">
-                <a href="">
+              <div
+                class="col-md-6 text-center guide-image-container"
+                id="signup"
+              >
+                <a href="./assets/img/pages/signup.png" title="Sign Up Page">
                   <img
                     src="./assets/img/iphone.png"
                     alt="Guide"
@@ -417,10 +455,10 @@
         <div class="content-box">
           <div class="container">
             <div class="row">
-              <div class="col-md-6 text-center">
-                <a href="">
+              <div class="col-md-6 text-center" id="badge">
+                <a href="./assets/img/pages/BADGES.png" title="Get Badges">
                   <img
-                    src="./assets/img/iphone.png"
+                    src="./assets/img/badges.png"
                     alt="Guide"
                     class="guide-img"
                     data-aos="zoom-in-up"
@@ -431,13 +469,17 @@
               </div>
               <div class="col-md-6">
                 <h3 class="guide-heading">
-                  The AI Mentor starts off with a mini test to help guide you
-                  through your path and where to beginner
+                  Get reward for your excellence and get into communities to
+                  help meet humans, network, help with projects and solve
+                  problems
                 </h3>
-                <div class="text-center">
-                  <a href="">
+                <div class="text-center" id="community">
+                  <a
+                    href="./assets/img/pages/COMMUNITYY.png"
+                    title="Join the Community"
+                  >
                     <img
-                      src="./assets/img/iphone.png"
+                      src="./assets/img/badge-2.png"
                       alt="Guide"
                       class="guide-img"
                       data-aos="zoom-in-down"
@@ -561,12 +603,24 @@
         <div class="content-box">
           <div class="container">
             <div class="row">
-              <div class="col-md-12">
+              <div class="col-md-4">
                 <img
                   src="./assets/img/footer-phone.png"
                   alt="Board"
                   class="img-fluid"
                 />
+              </div>
+              <div class="col-md-8 col-8 ml-auto">
+                <h3 class="board-title">
+                  Be the first to know
+                </h3>
+                <p class="board-text">
+                  This product is built to help you, as such we want you t be
+                  part of every process. Kindly provide the detail below to get
+                  a notification for the first testing phase. We want you to
+                  have the first experience
+                </p>
+                <a href="#email" class="btn btn-primary">Notify Me</a>
               </div>
             </div>
           </div>
@@ -579,6 +633,24 @@
         <p class="copyright">2020 &copy; Copyrights Reserved</p>
       </footer>
       <!-- Footer -->
+
+      <!-- Scroll Up -->
+      <div class="toUp">
+        <a href="#landing" class="img-fluid">
+          <svg
+            width="52"
+            height="62"
+            viewBox="0 0 52 62"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M28.4089 0.990978L50.7998 23.3814C51.439 24.0205 51.7898 24.8724 51.7898 25.7807C51.7898 26.69 51.4385 27.5414 50.7998 28.1805L48.7664 30.2134C48.1283 30.8521 47.2759 31.2039 46.3671 31.2039C45.4588 31.2039 44.5777 30.8521 43.9396 30.2134L30.8486 17.1512L30.8486 58.6505C30.8486 60.5216 29.3838 62 27.5122 62L24.6375 62C22.766 62 21.1535 60.5216 21.1535 58.6505L21.1535 17.003L7.98942 30.2129C7.35027 30.8516 6.52109 31.2034 5.61227 31.2034C4.70446 31.2034 3.86318 30.8516 3.22453 30.2129L1.1977 28.18C0.558556 27.5409 0.210251 26.6895 0.210251 25.7802C0.210251 24.8719 0.563092 24.02 1.20224 23.3809L23.5926 0.990474C24.2338 0.349811 25.0897 -0.00252565 25.9995 -4.12224e-06C26.9124 -0.00202209 27.7688 0.349811 28.4089 0.990978Z"
+              fill="white"
+            />
+          </svg>
+        </a>
+      </div>
     </div>
     <!-- Landing Ends -->
 
