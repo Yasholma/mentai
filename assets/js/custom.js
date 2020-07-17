@@ -6,6 +6,20 @@ const agreement = $('#agreement')
 const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
 
 $(function () {
+
+  // Watch Demo Trigger
+  $("#watch-demo").on('click', (e) => {
+    e.preventDefault();
+    $(".video").fadeIn();
+    $(".overlay").fadeIn();
+  })
+
+  // Close Modal
+  $(".overlay").on('click', function() {
+    $(this).fadeOut()
+    $(".video").fadeOut()
+  })
+
   // Onclick action on the subscribe button
   subscribeBtn.on('click', function (e) {
     e.preventDefault()
@@ -135,6 +149,7 @@ $(function () {
   magnifyImages('signup')
   magnifyImages('badge')
   magnifyImages('community')
+  magnifyImages('dashboard')
 })
 
 // Function that Adds images to magnify popup

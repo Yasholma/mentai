@@ -57,12 +57,13 @@
             </a>
             <div class="ml-auto">
               <a
-                href="#email"
+                href="#"
+                id="watch-demo"
                 class="btn btn-primary"
                 data-aos="fade-down"
                 data-aos-easing="ease-out-cubic"
                 data-aos-duration="1000"
-                >Get Notified</a
+                >Watch Demo</a
               >
               <button
                 class="btn btn-dark"
@@ -603,23 +604,22 @@
         <div class="content-box">
           <div class="container">
             <div class="row">
-              <div class="col-md-4">
-                <img
-                  src="./assets/img/footer-phone.png"
-                  alt="Board"
-                  class="img-fluid"
-                />
+              <div class="col-md-4" id="dashboard">
+                <a
+                  href="./assets/img/pages/DASHBOARD.png"
+                  title="Dashboard Page"
+                >
+                  <img
+                    src="./assets/img/footer-phone.png"
+                    alt="Board"
+                    class="img-fluid"
+                  />
+                </a>
               </div>
               <div class="col-md-8 col-8 ml-auto">
                 <h3 class="board-title">
                   Be the first to know
                 </h3>
-                <p class="board-text">
-                  This product is built to help you, as such we want you t be
-                  part of every process. Kindly provide the detail below to get
-                  a notification for the first testing phase. We want you to
-                  have the first experience
-                </p>
                 <a href="#email" class="btn btn-primary">Notify Me</a>
               </div>
             </div>
@@ -630,7 +630,16 @@
 
       <!-- *** Video Section *** -->
       <div class="video">
-        <div class="content-box">
+        <div class="mt-3 mb-3">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 mx-auto">
+                <h3 class="description-heading text-center text-white">
+                  Watch A Simple Guide
+                </h3>
+              </div>
+            </div>
+          </div>
           <div class="container-fluid">
             <div class="row">
               <div class="col-md-10 mx-auto">
@@ -669,6 +678,7 @@
       </div>
     </div>
     <!-- Landing Ends -->
+    <div class="overlay"></div>
 
     <!-- jquery -->
     <script src="./assets/js/jquery.min.js"></script>

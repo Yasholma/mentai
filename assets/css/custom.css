@@ -455,6 +455,28 @@ h6 {
   background: var(--secondary-color);
 }
 
+/* Video Styling */
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(16, 121, 207, 0.45);
+  z-index: 12;
+  transition: all 0.3s;
+  display: none;
+}
+.video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 13;
+  transition: all 0.3s;
+  display: none;
+}
+
 /* *** Dark Mode Styling *** */
 body.dark {
   background: var(--dark-mode);
