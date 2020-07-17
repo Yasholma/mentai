@@ -6,18 +6,17 @@ const agreement = $('#agreement')
 const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
 
 $(function () {
-
   // Watch Demo Trigger
-  $("#watch-demo").on('click', (e) => {
-    e.preventDefault();
-    $(".video").fadeIn();
-    $(".overlay").fadeIn();
+  $('#watch-demo').on('click', e => {
+    e.preventDefault()
+    $('.video').fadeIn()
+    $('.overlay').fadeIn()
   })
 
   // Close Modal
-  $(".overlay").on('click', function() {
+  $('.overlay').on('click', function () {
     $(this).fadeOut()
-    $(".video").fadeOut()
+    $('.video').fadeOut()
   })
 
   // Onclick action on the subscribe button
@@ -138,6 +137,7 @@ function sendMail(email) {
 $('.pages-slider').slick({
   dots: true,
   arrows: false,
+  infinite: false,
   customPaging: function (slider, i) {
     return '<span class="dot"></span>'
   },

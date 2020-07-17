@@ -620,6 +620,11 @@
                 <h3 class="board-title">
                   Be the first to know
                 </h3>
+                <p class="board-text">
+                  This product is built to help you, as such we want you t be
+                  part of every process. We want you to have the first
+                  experience
+                </p>
                 <a href="#email" class="btn btn-primary">Notify Me</a>
               </div>
             </div>

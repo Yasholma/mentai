@@ -878,8 +878,9 @@ body.dark .custom-input .form-control {
   }
 
   /* Board Styling */
+  /* Board Styling */
   .board {
-    height: 150px;
+    height: 200px;
     margin: 5rem 0 5rem;
   }
 
@@ -887,10 +888,21 @@ body.dark .custom-input .form-control {
     position: relative;
   }
 
+  .board-title {
+    font-size: 1rem;
+    margin-top: -2.7rem;
+  }
+
+  .board-text {
+    font-size: 0.9rem;
+
+    line-height: 1.5;
+  }
+
   .board img {
-    width: 100px;
+    width: 110px;
     position: absolute;
-    top: -5rem;
+    top: -4.3rem;
   }
 
   .footer {
@@ -1163,7 +1175,7 @@ body.dark .custom-input .form-control {
 
   /* Board Styling */
   .board {
-    height: 150px;
+    height: 200px;
     margin: 5rem 0 5rem;
   }
 
@@ -1172,9 +1184,9 @@ body.dark .custom-input .form-control {
   }
 
   .board img {
-    width: 100px;
+    width: 110px;
     position: absolute;
-    top: -5rem;
+    top: -4.3rem;
   }
 
   .board-title {
